@@ -1,0 +1,103 @@
+/* properties of main div kept hidden when page loads*/
+#overlay.resizable {
+  visibility: hidden;
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top: 50px;
+  left: 190px;
+}
+/*Grid container*/
+.resizers {
+  width: 260px;
+  height: 260px;
+  display: grid;
+  position: absolute;
+  background-color: black;
+  grid-template-columns: auto auto auto;
+}
+img {
+  border: 1px solid black;
+}
+/*center most grid using which user drags*/
+.dragGrid {
+  cursor: all-scroll;
+}
+.resizer {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  position: absolute;
+}
+#imageCropBtn {
+  margin-top: 20px;
+  margin-left: 665px;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #e9967a;
+}
+
+/*Canvas where the image is drawn*/
+canvas {
+  height: 350px;
+  width: 550px;
+  border: 1px solid black;
+  position: absolute;
+  top: 7px;
+  left: 800px;
+}
+
+/*grid items */
+.grid-item {
+  border: 1px solid white;
+}
+
+/*common class to give size for all the small draggable divs*/
+.handle {
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  background-color: royalblue;
+}
+
+/*following are the handles and its properties*/
+#handle1 {
+  right: 0px;
+  bottom: 0px;
+  cursor: nwse-resize;
+}
+
+#handle2 {
+  left: 0px;
+  bottom: 0px;
+  cursor: nesw-resize;
+}
+#handle3 {
+  left: 0px;
+  top: 0px;
+  cursor: nwse-resize;
+}
+#handle4 {
+  right: 0px;
+  top: 0px;
+  cursor: nesw-resize;
+}
+#handle5 {
+  top: 0px;
+  cursor: n-resize;
+}
+
+#handle6 {
+  left: 0px;
+  cursor: w-resize;
+}
+
+#handle7 {
+  bottom: 0px;
+  cursor: s-resize;
+}
+
+#handle8 {
+  right: 0px;
+  cursor: e-resize;
+}

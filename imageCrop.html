@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title></title>
+    <!-- This links the css file to the html file-->
+    <link rel="stylesheet" type="text/css" href="imgProperty.css" />
+</head>
+
+<body>
+    <!-- loading the Image which has to be cropped-->
+    <img src="img1.jpg" id="dogImg">
+
+    <!-- Canvas where the cropped part ahs to be drawn"-->
+    <canvas id="canvas"></canvas>
+    <div><button id="imageCropBtn" onclick="checkClickCount()"> Crop </button></div>
+    <div class="resizable" id="overlay">
+        <div class="resizers">
+            <!-- grid items -->
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item dragGrid"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <!-- handles of all the 4 corners and 4 sides to drag-->
+            <div class="handle handle1" id="handle1"></div>
+            <div class="handle handle2" id="handle2"></div>
+            <div class="handle handle3" id="handle3"></div>
+            <div class="handle handle4" id="handle4"></div>
+            <div class="handle handle5" id="handle5"></div>
+            <div class="handle handle6" id="handle6"></div>
+            <div class="handle handle7" id="handle7"></div>
+            <div class="handle handle8" id="handle8"></div>
+        </div>
+    </div>
+</body>
+<!-- this links the javascript file to the html file-->
+<script src="imgJSFile.js"></script>
+
+</html>

@@ -1,6 +1,6 @@
 # Description
-1. To load a static Image and crop it as per user's requirement.
-2. On first click, the grid lines  should appear.
+1. To load a static Image and click on crop button, a grid will appear on image.
+2. Resize the grid by clicking and dragging the corners and edges of the grid to select the area to be cropped.
 3. On second click, the cropped part should be shown and grid lines should disappear.
 4. All the events need to be removed on page unload.
 
